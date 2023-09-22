@@ -93,7 +93,7 @@ ${__jexl3(${c_ResponseCode} == 200)}
               <stringProp name="SMTPSampler.receiverTo">naveen@igsindia.net;sunilkumar@igsindia.net;suhas.bhat@igsindia.net;ningaraja.yb@igsindia.net;preetham.ms@igsindia.net;nitheesh.bp@igsindia.net</stringProp>
               <stringProp name="SMTPSampler.receiverCC"></stringProp>
               <stringProp name="SMTPSampler.receiverBCC"></stringProp>
-              <stringProp name="SMTPSampler.subject">IGS India Website Monitoring</stringProp>
+              <stringProp name="SMTPSampler.subject">IGS India (igsglobal.com) Website Monitoring</stringProp>
               <stringProp name="SMTPSampler.suppressSubject">false</stringProp>
               <stringProp name="SMTPSampler.include_timestamp">true</stringProp>
               <stringProp name="SMTPSampler.message">The igsglobal.com website is down</stringProp>
