@@ -117,7 +117,7 @@ ${__jexl3(${c_ResponseCode} &gt;&gt; 200)} &amp;&amp; $&quot;{c_title}&quot; == 
               <stringProp name="SMTPSampler.subject">IGS India Website Monitoring</stringProp>
               <stringProp name="SMTPSampler.suppressSubject">false</stringProp>
               <stringProp name="SMTPSampler.include_timestamp">false</stringProp>
-              <stringProp name="SMTPSampler.message">The igsindia.net website is down</stringProp>
+              <stringProp name="SMTPSampler.message">The igsindia.net website is down ${__time(dd-MM-yyyy  &apos;T&apos;  hh:mm:ss)}</stringProp>
               <stringProp name="SMTPSampler.plainBody">false</stringProp>
               <stringProp name="SMTPSampler.attachFile"></stringProp>
               <stringProp name="SMTPSampler.useSSL">false</stringProp>
