@@ -101,7 +101,7 @@ ${__jexl3(${c_ResponseCode} == 200)}
               <stringProp name="SMTPSampler.serverPort">587</stringProp>
               <stringProp name="SMTPSampler.mailFrom">nitheesh.bp@igsindia.net</stringProp>
               <stringProp name="SMTPSampler.replyTo"></stringProp>
-              <stringProp name="SMTPSampler.receiverTo">naveen@igsindia.net;sunilkumar@igsindia.net;suhas.bhat@igsindia.net;ningaraja.yb@igsindia.net;preetham.ms@igsindia.net;nitheesh.bp@igsindia.net</stringProp>
+              <stringProp name="SMTPSampler.receiverTo">naveen@igsindia.net;sunilkumar@igsindia.net;suhas.bhat@igsindia.net;ningaraja.yb@igsindia.net;nitheesh.bp@igsindia.net</stringProp>
               <stringProp name="SMTPSampler.receiverCC"></stringProp>
               <stringProp name="SMTPSampler.receiverBCC"></stringProp>
               <stringProp name="SMTPSampler.subject">IGS India Website Monitoring</stringProp>
@@ -120,7 +120,7 @@ ${__jexl3(${c_ResponseCode} == 200)}
               <boolProp name="SMTPSampler.use_eml">false</boolProp>
               <stringProp name="SMTPSampler.emlMessageToSend"></stringProp>
               <stringProp name="SMTPSampler.useAuth">true</stringProp>
-              <stringProp name="SMTPSampler.password">Wardog@1</stringProp>
+              <stringProp name="SMTPSampler.password">Wardog@12</stringProp>
               <stringProp name="SMTPSampler.username">nitheesh.bp@igsindia.net</stringProp>
               <stringProp name="SMTPSampler.messageSizeStatistics">false</stringProp>
               <stringProp name="SMTPSampler.enableDebug">false</stringProp>
