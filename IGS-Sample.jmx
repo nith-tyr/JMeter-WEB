@@ -81,7 +81,7 @@ Passed
 ${__jexl3(${c_ResponseCode} == 200)}
 
 </stringProp>
-            <stringProp name="IfController.condition">${__jexl3(${c_ResponseCode} &gt; 200)}</stringProp>
+            <stringProp name="IfController.condition">${__jexl3(${c_ResponseCode} &gt; 100)}</stringProp>
             <boolProp name="IfController.evaluateAll">false</boolProp>
             <boolProp name="IfController.useExpression">true</boolProp>
           </IfController>
