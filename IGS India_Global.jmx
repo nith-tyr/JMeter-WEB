@@ -28,7 +28,7 @@
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="IGS India" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="IGS India">
             <stringProp name="HTTPSampler.domain">igsglobal.com</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -59,15 +59,16 @@
               <intProp name="Assertion.test_type">1</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Text" enabled="true">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Text">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-1236901591">Enterprise-scale Quality Engineering Solutions – IGS India</stringProp>
+                <stringProp name="2057325226">Redefining Quality to Elevate Technology Experiences</stringProp>
               </collectionProp>
               <stringProp name="Assertion.custom_message"></stringProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
               <intProp name="Assertion.test_type">48</intProp>
               <stringProp name="Scope.variable"></stringProp>
+              <stringProp name="TestPlan.comments">Enterprise-scale Quality Engineering Solutions – IGS India</stringProp>
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
@@ -91,7 +92,7 @@ ${__jexl3(${c_ResponseCode} == 200)}
               <stringProp name="SMTPSampler.serverPort">587</stringProp>
               <stringProp name="SMTPSampler.mailFrom">nitheesh.bp@igsindia.net</stringProp>
               <stringProp name="SMTPSampler.replyTo"></stringProp>
-              <stringProp name="SMTPSampler.receiverTo">naveen@igsindia.net;sunilkumar@igsindia.net;suhas.bhat@igsindia.net;ningaraja.yb@igsindia.net;nitheesh.bp@igsindia.net</stringProp>
+              <stringProp name="SMTPSampler.receiverTo">nitheesh.bp@igsindia.net</stringProp>
               <stringProp name="SMTPSampler.receiverCC"></stringProp>
               <stringProp name="SMTPSampler.receiverBCC"></stringProp>
               <stringProp name="SMTPSampler.subject">IGS India Website Monitoring</stringProp>
@@ -125,7 +126,7 @@ ${__jexl3(${c_ResponseCode} == 200)}
           <boolProp name="displaySystemProperties">false</boolProp>
         </DebugSampler>
         <hashTree/>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -161,6 +162,89 @@ ${__jexl3(${c_ResponseCode} == 200)}
           </objProp>
           <stringProp name="filename"></stringProp>
         </ResultCollector>
+        <hashTree/>
+        <BackendListener guiclass="BackendListenerGui" testclass="BackendListener" testname="Backend Listener">
+          <elementProp name="arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="testName" elementType="Argument">
+                <stringProp name="Argument.name">testName</stringProp>
+                <stringProp name="Argument.value">Test</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="nodeName" elementType="Argument">
+                <stringProp name="Argument.name">nodeName</stringProp>
+                <stringProp name="Argument.value">Test-Node</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="runId" elementType="Argument">
+                <stringProp name="Argument.name">runId</stringProp>
+                <stringProp name="Argument.value">R001</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="influxDBURL" elementType="Argument">
+                <stringProp name="Argument.name">influxDBURL</stringProp>
+                <stringProp name="Argument.value">http://localhost:8086/</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="influxDBToken" elementType="Argument">
+                <stringProp name="Argument.name">influxDBToken</stringProp>
+                <stringProp name="Argument.value">32_Og8VgmmaGJv3mBadVjH12xSyEs6IqDqhQm5UGQ2561x3M9V2xZniJWsVwNwYQIZ4fXZhLA-y3ZuZLD0Q8gQ== </stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="influxDBOrganization" elementType="Argument">
+                <stringProp name="Argument.name">influxDBOrganization</stringProp>
+                <stringProp name="Argument.value">IGS</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="influxDBBucket" elementType="Argument">
+                <stringProp name="Argument.name">influxDBBucket</stringProp>
+                <stringProp name="Argument.value">IGS</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="influxDBFlushInterval" elementType="Argument">
+                <stringProp name="Argument.name">influxDBFlushInterval</stringProp>
+                <stringProp name="Argument.value">4000</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="influxDBMaxBatchSize" elementType="Argument">
+                <stringProp name="Argument.name">influxDBMaxBatchSize</stringProp>
+                <stringProp name="Argument.value">2000</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="influxDBThresholdError" elementType="Argument">
+                <stringProp name="Argument.name">influxDBThresholdError</stringProp>
+                <stringProp name="Argument.value">5</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="samplersList" elementType="Argument">
+                <stringProp name="Argument.name">samplersList</stringProp>
+                <stringProp name="Argument.value">.*</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="useRegexForSamplerList" elementType="Argument">
+                <stringProp name="Argument.name">useRegexForSamplerList</stringProp>
+                <stringProp name="Argument.value">true</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="recordSubSamples" elementType="Argument">
+                <stringProp name="Argument.name">recordSubSamples</stringProp>
+                <stringProp name="Argument.value">true</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="saveResponseBodyOfFailures" elementType="Argument">
+                <stringProp name="Argument.name">saveResponseBodyOfFailures</stringProp>
+                <stringProp name="Argument.value">true</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="responseBodyLength" elementType="Argument">
+                <stringProp name="Argument.name">responseBodyLength</stringProp>
+                <stringProp name="Argument.value">2000</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="classname">io.github.mderevyankoaqa.influxdb2.visualizer.InfluxDatabaseBackendListenerClient</stringProp>
+        </BackendListener>
         <hashTree/>
       </hashTree>
     </hashTree>
